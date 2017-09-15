@@ -86,7 +86,7 @@ var routine = function() {
 
 
 tweetRandomQuoteFromArtists(artists)
-setInterval(routine, 1000 * 2); // 30 minutes interval
+setInterval(routine, halfHour); // 30 minutes interval
 
 
 
