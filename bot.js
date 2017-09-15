@@ -46,8 +46,7 @@ var getRandomQuoteFromSong = function(songId) {
 	  var quote = quotes[i]["fragment"];
 	  if (quote.length <= 138) {
 	  	quote = "\"" + quote + "\""
-	  	// console.log(quote)
-	  	// tweetQuote(quote)
+	  	tweetQuote(quote)
  } else {
  	 routine()
  }
