@@ -64,9 +64,9 @@ var tweetQuote = function(quote) {
 }
 
 var tweetQuoteInfo = function(statusId) {
-	quoteInfo = "@rapquotebot " + songName + "\n" + songUrl
-	if (quoteInfo.length > 140) {
-		quoteInfo = "@rapquotebot " + songUrl
+	quoteInfo = "@rapquotebot " + songName
+	if (quoteInfo.length > 135) {
+		quoteInfo = "@rapquotebot " + songName.substring(0, 130) + "..."
 	}
 	Twitter.post('statuses/update', { status: quoteInfo, in_reply_to_status_id: statusId}, function(err, data, response) {
   		console.log("tweetou " + quoteInfo) 
